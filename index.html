@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Manajemen Supir</title>
+</head>
+<body>
+    <table>
+        <h2>Form Manajemen Supir</h2>
+        
+        <!-- nama supir -->
+        <tr>
+            <td><label for="nama">Nama:</label> </td>
+            <td><input type="text" id="nama" name="nama"/></td>
+        </tr>
+        <!-- email supir -->
+         <tr>
+            <td><label for="email">Email:</label> </td>
+            <td><input type="email" id="email" name="email"/></td>
+         </tr>
+        <!-- nomor hp supir -->
+         <tr>
+            <td><label for="nomorhp">Nomor Hp:</label> </td>
+            <td><input type="number" id="nomorhp" name="nomorhp"/></td>
+         </tr>
+         <!-- destiinasi supir -->
+          <tr>
+            <td><label for="destinasi">Destinasi:</label> </td>
+            <td><select id="destinasi" name="destinasi">
+                <option value=""> Pilih Destinasi </option>
+                <option value="Medan">Medan</option>
+                <option value="Pematang Siantar">Pematang Siantar</option>
+                <option value="Prapat">Prapat</option>
+                <option value="Padang">Padang</option>
+                <option value="Bukittinggi">Bukittinggi</option>
+                <option value="Pekanbaru">Pekanbaru</option>
+                <option value="Banda Aceh">Banda Aceh</option>
+                <option value="Jakarta">Jakarta</option>
+                <option value="Semarang">Semarang</option>
+                <option value="Yogyakarta">Yogyakarta</option>
+                <option value="Surabaya">Surabaya</option>
+                <option value="Malang">Malang</option>
+                <option value="Denpasar">Denpasar</option>
+                <option value="Kupang">Kupang</option>
+                <option value="Makasssar">Makassar</option>  
+                <option value="Jayapura">Jayapura</option>     
+                <option value="Timika">Timika</option>
+             </select>
+            </td>
+          </tr>
+          <!-- tanggal supir berangkat -->
+           <tr>
+            <td><label for="tanggalberangkat">Tanggal Berangkat:</label> </td>
+            <td><input type="date" id="tanggalberangkat" name="tanggalberangkat"/> </td>
+           </tr>
+           <!-- waktu berangkat -->
+           <tr>
+            <td><label for="waktuberangkat">Waktu Berangkat:</label> </td>
+            <td><input type="time" id="waktuberangkat" name="waktuberangkat"/> </td>
+           </tr>
+           <!-- jumlah penumpang  -->
+            <tr>
+                <td><label for="jumlahpenumpang">Jumlah Penumpang:</label> </td>
+                <td><input type="number" id="jumlahpenumpang" name="jumlahpenumpang"/></td>
+            </tr>
+            <!-- pilihan armada -->
+             <tr>
+                <td><label for="armada">Pilihan Armada:</label></td>
+                <td>
+                    <select id="armada" name="armada" required>
+                    <option value=""> Pilih Armada </option>
+                    <option value="Mobil Hiace">Mobil Hiace</option>
+                    <option value="Bus Laksana">Bus Laksana</option>
+                    <option value="Kijang Innova">Kijang Innova</option>
+                    <option value="MercedesBenz 10000 OH">MercedesBenz 10000 OH</option>
+                </select>
+                </td> </tr>
+                <!-- validasi kesiapan supir -->
+             <tr>
+             <td>Validasi Kesiapan Supir:</td>
+             <td>
+            <input type="checkbox" id="tidak_ngantuk" name="validasi[]" value="tidak_ngantuk">
+                    <label for="tidak_ngantuk">Supir tidak dalam kondisi ngantuk berat</label><br>
+                <input type="checkbox" id="sehat" name="validasi[]" value="sehat">
+                <label for="sehat">Supir dalam keadaan sehat</label><br>
+                <input type="checkbox" id="tidak_obat" name="validasi[]" value="tidak_obat">
+                <label for="tidak_obat">Supir tidak dalam pengaruh obat terlarang atau minuman memabukkan</label>
+            </td>
+            </tr>
+             <td><label for="surat_kerja">Upload Surat Kerja:</label></td>
+             <td><input type="file" id="surat_kerja" name="surat_kerja" accept=".pdf,.jpg,.jpeg,.png" required></td>
+            </tr>
+      <tr> 
+            <td colspan="2" style="text-align: right;">
+          <input type="submit" value="Simpan data supir">
+            </td>
+      </tr>
+    </table>
+</body>
+</html>
